@@ -6,7 +6,7 @@ using System.Web;
 
 namespace OnlineMarket.Models
 {
-    public class IdentityModel : DbContext
+    public class IdentityModel : DbContext, IIdentityModel
     {
         public DbSet<Product> Products { get; set; }
         public DbSet<Cart> Carts { get; set; }
