@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Threading.Tasks;
 using System.Web.Http;
 using OnlineMarket.Models;
 
@@ -24,8 +23,7 @@ namespace OnlineMarket.Controllers
             _context = context;
         }
 
-        [HttpGet]
-        public async Task<IEnumerable<Product>> GetProducts()
+        public IEnumerable<Product> GetProducts()
         {
             var a = _context.Products;
             return _context.Products.ToList();
