@@ -7,23 +7,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Component } from '@angular/core';
-import { HttpService } from './product.service';
-let ProductsComponent = class ProductsComponent {
-    constructor(httpService) {
-        this.httpService = httpService;
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+let HttpService = class HttpService {
+    constructor(http) {
+        this.http = http;
     }
-    ngOnInit() {
-        this.httpService.getData().subscribe(data => this.products = data);
+    getData() {
+        return this.http.get('/api/products');
     }
 };
-ProductsComponent = __decorate([
-    Component({
-        selector: 'products',
-        templateUrl: './products.component.html',
-        providers: [HttpService]
-    }),
-    __metadata("design:paramtypes", [HttpService])
-], ProductsComponent);
-export { ProductsComponent };
-//# sourceMappingURL=products.component.js.map
+HttpService = __decorate([
+    Injectable(),
+    __metadata("design:paramtypes", [HttpClient])
+], HttpService);
+export { HttpService };
+//# sourceMappingURL=product.service.js.map
