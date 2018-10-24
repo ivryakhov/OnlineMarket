@@ -16,7 +16,8 @@
     "@angular/router": "~6.0.0",
     "core-js": "2.5.7",
     "rxjs": "6.2.0",
-    "zone.js": "0.8.26"
+    "zone.js": "0.8.26",
+    "angular-6-datatable": "0.8.0"
   },
   "devDependencies": {
     "@types/node": "10.0.4",

@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { DataTableModule } from 'angular-6-datatable';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -15,6 +16,7 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
         BrowserModule,
         FormsModule,
         HttpClientModule,
+        DataTableModule,
         RouterModule.forRoot([
             { path: '', component: HomeComponent },
             { path: 'products', component: ProductsComponent },
