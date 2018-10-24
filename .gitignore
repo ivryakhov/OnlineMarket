@@ -259,3 +259,21 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/OnlineMarket/Scripts/esm
+/OnlineMarket/Scripts/umd
+/OnlineMarket/Scripts/README.md
+/OnlineMarket/Scripts/popper.min.js.map
+/OnlineMarket/Scripts/popper.min.js
+/OnlineMarket/Scripts/popper.js.map
+/OnlineMarket/Scripts/popper.js
+/OnlineMarket/Scripts/popper-utils.min.js.map
+/OnlineMarket/Scripts/popper-utils.min.js
+/OnlineMarket/Scripts/popper-utils.js.map
+/OnlineMarket/Scripts/popper-utils.js
+/OnlineMarket/Scripts/index.d.ts
+/OnlineMarket/Scripts/bootstrap.min.js.map
+/OnlineMarket/Scripts/bootstrap.js.map
+/OnlineMarket/Scripts/bootstrap.bundle.min.js.map
+/OnlineMarket/Scripts/bootstrap.bundle.min.js
+/OnlineMarket/Scripts/bootstrap.bundle.js.map
+/OnlineMarket/Scripts/bootstrap.bundle.js
