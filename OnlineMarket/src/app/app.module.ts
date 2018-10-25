@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { DataTableModule } from 'angular-6-datatable';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -17,6 +18,7 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
         FormsModule,
         HttpClientModule,
         DataTableModule,
+        NgbModule.forRoot(),
         RouterModule.forRoot([
             { path: '', component: HomeComponent },
             { path: 'products', component: ProductsComponent },
