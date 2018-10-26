@@ -23,7 +23,9 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
             { path: '', component: HomeComponent },
             { path: 'products', component: ProductsComponent },
             { path: 'shopping-cart', component: ShoppingCartComponent }
-        ])
+        ],
+            { onSameUrlNavigation: `reload` }
+        )
     ],
     declarations: [
         AppComponent,

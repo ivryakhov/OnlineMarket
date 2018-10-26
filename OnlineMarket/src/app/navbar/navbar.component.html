@@ -1,5 +1,15 @@
-﻿<nav class="navbar ">
-    <a routerLink="/">Online Market</a> |
-    <a routerLink="/products">Products</a> |
-    <a routerLink="/shopping-cart">Shopping Cart </a>    
+﻿<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/products" routerLinkActive="active">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/shopping-cart" routerLinkActive="active">Shopping Cart</a>
+            </li>
+        </ul>       
+    </div>   
 </nav>
